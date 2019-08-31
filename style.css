@@ -401,6 +401,7 @@ figure{
 
 .chose_one{
     width: 46%;
+    margin-left: 8%;
     flex-wrap: wrap;
 }
 
@@ -410,7 +411,7 @@ figure{
 
 .chose_title{
     width: 46%;
-    margin-left: 30px;
+    margin-left: 8%;
 }
 
 .image {
@@ -543,7 +544,9 @@ figure{
 
     .chose_title{
         width: 90%;
+        margin: 0 auto;
     }
+    
 }
 
 @media (max-width: 1199.98px){
@@ -649,6 +652,10 @@ figure{
         margin: 3% 3%;
     }
 
+    .chose.third>.last-child{
+        display: none !important;
+    }
+
     .image>a>img{
         width: 100%;
         height: auto;
@@ -691,7 +698,7 @@ figure{
 
 /* ----- sec4 New Games ----- */
 #game{
-    background: url(image/20190827145856.png) center fixed;
+    background: url(image/20190827145856.png) center;
     background-size: cover;
     background-repeat: no-repeat;
 }
