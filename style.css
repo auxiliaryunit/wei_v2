@@ -394,18 +394,22 @@ figure{
 
 /* ----- sec6 Chose ----- */
 #chose{
-    background: url(image/image_2019_08_25Z.png) center;
+    background: url(image/basketball-slider-2-1.png) center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
+.chose_one{
+    width: 46%;
+    flex-wrap: wrap;
+}
+
 .chose{
-    width: 60%;
-    margin-left: 30px;
+    width: 100%;
 }
 
 .chose_title{
-    width: 60%;
+    width: 46%;
     margin-left: 30px;
 }
 
@@ -527,8 +531,14 @@ figure{
 }
 
 @media (max-width: 1903px){
-    .chose{
+    .chose_one{
         width: 90%;
+        margin: 0 auto;
+    }
+
+    .chose{
+        width: 100%;
+        justify-content: center;
     }
 
     .chose_title{
@@ -538,7 +548,6 @@ figure{
 
 @media (max-width: 1199.98px){
     .chose{
-        margin: 0 5%;
         justify-content: center;
     }
 
@@ -548,35 +557,20 @@ figure{
     }
 
     .image {
-        max-height: 305px;
-    }
-
-    .image>a>img {
-        max-height: 305px;
+        width: 23%;
+        max-height: 280px;
     }
 
     .stm-plus {
         width: 100%;
-        height: 305px;
+        height: 100%;
     }
 }
 
 @media (max-width: 991.98px){
-    /* .chose{
-        justify-content: space-around;
-    } */
-
-    .image {
-        max-height: 250px;
-    }
-
     .image>a {
         display: flex;
         justify-content: center;
-    }
-
-    .image>a>img {
-        max-height: 250px;
     }
 
     .stm-plus{
@@ -596,16 +590,18 @@ figure{
 
 @media (max-width: 767.98px){
     .image {
-        max-height: 180px;
-        margin: 30px 5px 14px;
+        width: 30%;
+        max-height: 200px;
     }
 
     .image>a>img {
-        max-height: 180px;
+        width: auto;
+        height: 100%;
+        max-height: 200px;
     }
 
     .stm-plus{
-        height: 180px;
+        height: 100%;
         font-size: 10px;
         z-index: 50;
         border-radius: 0;
@@ -623,14 +619,34 @@ figure{
 }
 
 @media (max-width: 575.98px){
+    .chose_one{
+        justify-content: center;
+        align-items: flex-start;
+    }
+
     .chose{
+        width: 40%;
+        margin: 0 3%;
         flex-wrap: wrap;
+        flex-flow: column;
+    }
+
+    .chose.third{
+        width: 90%;
+        flex-wrap: wrap !important;
+        flex-flow: row;
+        justify-content: flex-start;
     }
 
     .image {
-        width: 40%;
-        height: 180px;
+        width: 100%;
+        height: 200px;
         margin: 10px auto;
+    }
+
+    .image.image_third{
+        width: 44%;
+        margin: 3% 3%;
     }
 
     .image>a>img{
@@ -654,9 +670,12 @@ figure{
 }
 
 @media (max-width: 375px){
+    .chose_one{
+        width: 100%;
+    }
+
     .image {
-        width: 48%;
-        height: 100%;
+        width: 100%;
     }
 
     .image>a{
